@@ -4,10 +4,21 @@ import doctest
 
 
 def compare_ints(a, b):
+    """
+    Compares two ints, returning 1 if the first is greater, -1 if
+    the second is greater, and 0 if they're equal.
+
+    >>> compare_ints(12, 35)
+    -1
+    >>> compare_ints(35, 30)
+    1
+    >>> compare_ints(18, 18)
+    0
+    """
     if a < b:
         return -1
     elif a > b:
-        return -1
+        return 1
     return 0
 
 
