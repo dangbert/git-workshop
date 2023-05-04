@@ -1,12 +1,22 @@
 #!/usr/bin/env python3
 
 import doctest
+from typing import Tuple
 
 
-def compare_ints(a, b):
-    if a < b:
+def compare_two_ints(nums: Tuple):
+    """
+    Compares two integers.
+    TODO: add more test cases.
+
+    >>> compare_two_ints((12, 35))
+    -1
+    >>> compare_two_ints((5, 5))
+    0
+    """
+    if nums[0] < nums[1]:
         return -1
-    elif a > b:
+    elif nums[1] < nums[0]:
         return -1
     return 0
 
